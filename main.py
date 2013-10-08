@@ -11,5 +11,5 @@ with open('contacts') as f:
 	for line in f:
 		name.append([str(x) for x in line.split()])
 	for x in name:		
-		message = client.messages.create(body="Just kidding " + x[0] + ", Clearly I am autistic and don't know how to space words properly. But again I'd like to remind you that you are definitely at the level of a " + x[2] + " rank League of Legends player!", to=x[1], from_="+13472526162")
+		message = client.messages.create(body="Hello " + x[0] + " " + x[1] + "! This is an automated message to let you know that you have a care package waiting for you! Please come pick it up on the first floor of " + x[3] + " suite! Hope you have a great day!", to=x[2], from_="+13472526162")
 		print "message sent to: " + x[0]
